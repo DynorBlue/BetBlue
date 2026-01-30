@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.util.Date;
 @Entity
 @Table(name = "registroDiario")
-public class registroDiario {
+public class RegistroDiario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,10 +19,10 @@ public class registroDiario {
     @Column(name = "fecha")
     private Date fecha;
 
-    public registroDiario() {
+    public RegistroDiario() {
     }
 
-    public registroDiario(Date fecha, int idRegistro, Usuario idUsuario) {
+    public RegistroDiario(Date fecha, int idRegistro, Usuario idUsuario) {
         this.fecha = fecha;
         this.idRegistro = idRegistro;
         this.idUsuario = idUsuario;
